@@ -47,11 +47,11 @@ ul {
 }
 
 .underscore {
-    width: 5rem;
-    height: 2px;
-    background: var(--gold-color);
-    margin-top: 1.3rem;
-    margin-bottom: 2rem;
+  width: 5rem;
+  height: 2px;
+  background: var(--gold-color);
+  margin-top: 1.3rem;
+  margin-bottom: 2rem;
 }
 
 /* Header */
@@ -70,7 +70,7 @@ nav {
 }
 
 #nav-items {
-    display: none;
+  display: none;
 }
 
 .nav-item {
@@ -83,14 +83,22 @@ nav {
 }
 
 /* Showcase */
+/* .carousel {
+  overflow: hidden;
+  border-radius: 20px;
+} */
+
 #showcase {
   background: #2e2d2d;
 }
 
 #showcase img {
-  height: calc(100vh - 12vh);
+  height: 70vh;
   object-fit: cover;
-  
+}
+
+#showcase .custom-button {
+  border: 1px solid var(--gold-color);
 }
 
 .carousel-indicators .active {
@@ -116,46 +124,96 @@ nav {
   border: 2px solid #ce9f2b;
 }
 
+.overlay {
+  color: #fff;
+  position: absolute;
+  z-index: 12;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
 /* About */
 #about .about-us {
-    color: var(--gold-color);
-    font-size: 1rem;
-    text-transform: uppercase;
-    letter-spacing: 0.5em;
+  color: var(--gold-color);
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
 }
 
 #about .welcome {
-    text-transform: uppercase;
-    line-height: 0.5rem;
+  text-transform: uppercase;
+  line-height: 0.5rem;
 }
 
 #about button {
-    background: rgba(0, 0, 0, 0.15);
-    color: #000;
+  background: rgba(0, 0, 0, 0.15);
+  color: #000;
 }
 
 /* Services */
 #services h3 {
-    text-transform: uppercase;
-    text-align: center;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 #services .underscore {
-    margin: auto;
-    margin-bottom: 2rem;
+  margin: auto;
+  margin-bottom: 2rem;
 }
 
 #services .service {
-    border: 1px solid #000;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background: #000;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  border: 1px solid #000;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Barbers */
+#barbers {
+  background: #2e2d2d;
+  color: #fff;
+  padding: 1rem 0 2rem 0;
+}
+
+#barbers h3 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#barbers .underscore {
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+#barbers .barber {
+  width: 200px;
+  height: 200px;
+}
+
+#barbers .barber-image {
+  height: 80%;
+  background: #000;
+  border-radius: 20px 20px 0 0;
+}
+
+#barbers .barber-image img {
+  height: 100%;
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+
+#barbers .barber-name {
+  height: 20%;
+  background: var(--gold-color);
+  border-radius: 0 0 20px 20px;
 }
 
 /* Media queries */
