@@ -1,0 +1,21 @@
+.caption {
+    color: #fff;
+    position: absolute;
+    z-index: 12;
+    top: 30%;
+    left: 50%;
+    width: 80%;
+    max-width: 600px;
+    /* text-align: center; */
+    transform: translateX(-50%);
+  }
+  
+  .riyaz-head{
+    text-transform: uppercase;
+    color: var(--gold-color);
+    font-size: 2rem;
+  }
+  
+  .riyaz-body {
+    font-size: 0.8rem;
+  }
