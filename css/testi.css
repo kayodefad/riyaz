@@ -20,16 +20,16 @@ body{
 	/* background: #fcfcfd; */
 }
 #testimonials {
-	float: left;
+	/* float: left; */
 	position: relative;
 	/* padding: 30px 0; */
 	background: #fcfcfd;
 	z-index: 1;
-	width: 100%;
+	width: 90%;
+    margin: auto;
     text-align: center;
 }
 .section-title{
-	float: left;
 	position: relative;
 	width: 100%;
 	padding-bottom: 40px; 
@@ -39,12 +39,12 @@ body{
 	color: #000;
 	font-size: 13px;
 	line-height: 20px;
-	max-width: 550px;
-	margin: 0 auto;
+	/* max-width: 550px; */
+	/* margin: 0 auto; */
 }
 .section-title h2 {
-	float: left;
-	width: 100%;
+	/* float: left;
+	width: 100%; */
 	text-align: center;
 	color: #000;
 	position: relative;
@@ -74,7 +74,7 @@ body{
 .listing-carousel-button{
 	position: absolute;
 	top: 50%;
-	width: 80px;
+	width: 50px;
 	height: 50px;
 	line-height: 50px;
 	margin-top: -25px;
@@ -86,21 +86,21 @@ body{
 	outline: none;
 }
 .listing-carousel-button.listing-carousel-button-next{
-	right: -30px;
+	right: -10px;
 	padding-right: 20px;
 	border-radius: 60px 0 0 60px;
 }
 .listing-carousel-button.listing-carousel-button-prev{
-	left: -30px;
+	left: -10px;
 	padding-left: 20px;
 	border-radius: 0 60px 60px 0;
 }
 .listing-carousel-button.listing-carousel-button-next:hover{
-	right: -15px;
+	right: -10px;
 	background: rgba(6,27,65,0.4);
 }
 .listing-carousel-button.listing-carousel-button-prev:hover{
-	left: -15px;
+	left: -10px;
 	background: rgba(6,27,65,0.4);
 }
 .testi-item {

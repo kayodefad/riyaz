@@ -38,6 +38,11 @@ ul {
   /* max-width: 1000px !important; */
 }
 
+.header-container {
+  max-width: 1200px;
+  padding: 0.7rem 0;
+}
+
 .custom-button {
   padding: 7px 10px;
   border: none;
@@ -55,6 +60,10 @@ ul {
 }
 
 /* Header */
+header {
+  font-size: 0.9rem;
+}
+
 nav {
   height: 10vh;
 }
@@ -88,17 +97,19 @@ nav {
   border-radius: 20px;
 } */
 
-#showcase {
-  background: #2e2d2d;
-}
-
 #showcase img {
   height: 70vh;
   object-fit: cover;
+  border-radius: 20px;
 }
 
 #showcase .custom-button {
   border: 1px solid var(--gold-color);
+}
+
+.carousel {
+  border-radius: 20px;
+  overflow: hidden;
 }
 
 .carousel-indicators .active {
@@ -128,12 +139,17 @@ nav {
   color: #fff;
   position: absolute;
   z-index: 12;
-  top: 50%;
-  left: 0;
-  width: 100%;
-  text-align: center;
+  top: 30%;
+  left: 50%;
+  width: 80%;
+  /* max-width: 600px; */
+  /* text-align: center; */
+  transform: translateX(-50%);
 }
 
+.overlay h2 {
+  text-transform: uppercase;
+}
 /* About */
 #about .about-us {
   color: var(--gold-color);
