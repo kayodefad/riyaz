@@ -87,3 +87,14 @@ $(document).ready(function () {
   initParadoxWay();
 });
 
+const gallery_col = document.querySelectorAll(".column");
+
+// gallery_col[0].children[0].style.height = "400px";
+
+// for (let i = 0; i < gallery_col.length; i++) {
+//   let gal_child = gallery_col[i].children;
+//   for (let j = 0; j < gal_child.length; j++) {
+//     if (j % 2 == 0) gal_child[j].style.height = "200px";
+//     else gal_child[j].style.height = "300px";
+//   }
+// }

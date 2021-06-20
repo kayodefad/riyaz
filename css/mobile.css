@@ -19,3 +19,8 @@
   .riyaz-body {
     font-size: 0.8rem;
   }
+
+  .gallery .column {
+    flex: 50%;
+    padding: 0 4px;
+  }
