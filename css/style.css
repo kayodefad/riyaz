@@ -61,7 +61,7 @@ ul {
 }
 
 .underscore {
-  width: 5rem;
+  width: 4rem;
   height: 2px;
   background: var(--gold-color);
   margin-top: 1.3rem;
@@ -93,6 +93,24 @@ nav {
 
 .nav-item {
   padding: 1rem;
+}
+
+#nav-items-large li a,
+#nav-items li a,
+#nav-items-large li a.active,
+#nav-items li a.active {
+  font-weight: bold;
+  transition: color 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 5px;
+}
+
+#nav-items-large li a:hover,
+#nav-items li a:hover,
+#nav-items-large li a.active,
+#nav-items li a.active {
+  color: var(--gold-color);
+  border-bottom: 2px solid var(--gold-color);
 }
 
 #hamburger-icon {
@@ -304,13 +322,16 @@ nav {
 }
 
 #about .welcome {
-  text-transform: uppercase;
   line-height: 0.5rem;
+}
+
+#about-info {
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 /* Services */
 #services h3 {
-  text-transform: uppercase;
   text-align: center;
 }
 
@@ -369,7 +390,6 @@ nav {
 }
 
 #barbers h3 {
-  text-transform: uppercase;
   text-align: center;
 }
 
@@ -486,5 +506,26 @@ nav {
       opacity: 1;
     }
   }
+}
+
+/* scroll to top */
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: transparent;
+  color: rgb(160, 119, 16); /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  /* padding: 15px; */
+  border-radius: 10px; 
+  font-size: 2rem; /* Increase font size */
+}
+
+#myBtn:hover {
+  opacity: 0.8;
 }
 
