@@ -1,0 +1,6 @@
+#book-app form {
+    padding: 3.5em 2rem 4rem 2rem;
+    border: 1px solid var(--gold-color);
+    /* border-radius: 5px; */
+    background: #F6F6F6;
+  }

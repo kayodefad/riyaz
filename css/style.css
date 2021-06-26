@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
-  --gold-color: #ce9f2b;
+  --gold-color: rgb(206, 159, 43);
 }
 
 * {
@@ -12,7 +12,9 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  background: rgba(218, 183, 87, 0.1);
+  background: #fff;
+  font-size: 0.9rem;
+  /* background: rgba(218, 183, 87, 0.1); */
 }
 
 a {
@@ -46,10 +48,16 @@ ul {
 
 .custom-button {
   padding: 10px 15px;
-  border: 1px solid var(--gold-color);
+  border: none;
   border-radius: 5px;
   color: #fff;
-  background: rgba(0, 0, 0, 0.3);
+  background: var(--gold-color);
+  opacity: 0.8;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.custom-button:hover {
+  opacity: 1;
 }
 
 .underscore {
@@ -113,11 +121,113 @@ nav {
   margin: 4px 0;
 }
 
+/* Service hours */
+.service-hours-container {
+  width: 80%;
+  max-width: 1100px;
+  margin: auto;
+  transform: translateY(-35%);
+  z-index: 15;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+#service-hours, #book-app {
+  width: 46%;
+}
+
+#service-hours > p {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+#service-hours table {
+  margin: auto;
+}
+
+#service-hours table tr td {
+  padding-top: 1rem !important;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+#all-services {
+  border: 1px solid var(--gold-color);
+  padding: 2rem;
+  position: relative;
+}
+
+#services-header {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #000;
+  padding: 0.5rem 0;
+  color: #fff;
+  text-align: center;
+  width: 200px;
+}
+
+#services-inner-header {
+  text-align: center;
+}
+
+/* Book App */
+#book-app {
+  /* width: 400px; */
+  /* top: 50%; */
+  /* right: 10%; */
+  /* z-index: 11; */
+  font-size: 0.8rem;
+}
+
+#book-app form {
+  padding: 3.5em 3rem 4rem 3rem;
+  border: 1px solid var(--gold-color);
+  /* border-radius: 5px; */
+  background: #F6F6F6;
+}
+
+#book-app form p {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+#book-app input,
+#book-app select  {
+  border:none;
+  padding: 0.5rem;
+  background: #fff;
+  outline: none;
+  margin-bottom: 2rem;
+  width: 100%;
+  background: rgb(255,255,255,0.8);
+}
+
+#book-app button {
+  width: 100%;
+}
+
 /* Showcase */
 /* .carousel {
   overflow: hidden;
   border-radius: 20px;
 } */
+#showcase {
+  position: relative;
+}
+
+.showcase-container {
+  width: 90%;
+  max-width: 1400px;
+  margin: auto;
+  /* max-width: 1000px !important; */
+}
 
 #showcase img {
   height: 70vh;
@@ -164,7 +274,7 @@ nav {
   top: 25%;
   left: 10%;
   width: 80%;
-  max-width: 600px;
+  max-width: 500px;
   /* text-align: center; */
   /* transform: translateX(-50%); */
 }
@@ -172,7 +282,7 @@ nav {
 .riyaz-head{
   text-transform: uppercase;
   color: var(--gold-color);
-  font-size: 4rem;
+  font-size: 3.5rem;
   /* margin-bottom: 1rem; */
 }
 
@@ -182,6 +292,10 @@ nav {
 }
 
 /* About */
+#about {
+  margin-top: -8rem;
+}
+
 #about .about-us {
   color: var(--gold-color);
   font-size: 1rem;
@@ -192,11 +306,6 @@ nav {
 #about .welcome {
   text-transform: uppercase;
   line-height: 0.5rem;
-}
-
-#about button {
-  background: rgba(0, 0, 0, 0.15);
-  color: #000;
 }
 
 /* Services */
