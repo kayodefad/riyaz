@@ -89,3 +89,15 @@ nav {
 #about {
   margin-top: 3rem;
 }
+
+/* Footer */
+.footer-content {
+  margin-bottom: 2rem;
+}
+
+/* Contact Form */
+#contact form {
+  padding: 3.5em 1.5rem 4rem 1.5rem;
+  border: none;
+  background: #2e2d2d;
+}

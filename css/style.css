@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --gold-color: rgb(206, 159, 43);
 }
@@ -58,6 +62,7 @@ ul {
 
 .custom-button:hover {
   opacity: 1;
+  color: #fff;
 }
 
 .underscore {
@@ -387,6 +392,7 @@ nav {
   background: #2e2d2d;
   color: #fff;
   padding: 1rem 0 2rem 0;
+  padding-top: 3rem;
 }
 
 #barbers h3 {
@@ -429,7 +435,6 @@ nav {
 }
 
 .gallery-header {
-  text-transform: uppercase;
   text-align: center;
 }
 
@@ -444,6 +449,77 @@ nav {
   vertical-align: middle;
   width: 100%;
   object-fit: cover;
+}
+
+/* Contact */
+#contact {
+  width: 90%;
+  max-width: 500px;
+  margin: auto;
+  margin-top: 5rem;
+}
+
+#contact form {
+  padding: 3.5em 3rem 4rem 3rem;
+  border: none;
+  background: #2e2d2d;
+}
+
+#contact form p {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+#contact input,
+#contact select,
+#contact textarea  {
+  border:none;
+  padding: 0.5rem;
+  background: #fff;
+  outline: none;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+#contact button {
+  width: 100%;
+}
+
+/* Footer */
+#footer {
+  background: #2e2d2d;
+  padding: 2.2rem 0;
+  color: #fff;
+  font-size: 0.8rem;
+  border-radius: 25px 25px 0 0;
+}
+
+#footer #inner-footer {
+  width: 90%;
+  max-width: 1400px;
+  margin: auto;
+}
+
+#footer i {
+  color: #ca3232;
+  font-size: 1.2rem;
+  margin-right: 1rem;
+}
+
+#footer a {
+  transition: color 0.3s ease-in-out;
+}
+
+#footer a:hover {
+  color: var(--gold-color);
+}
+
+#footer .footer-content-header {
+  font-weight: 1rem;
+}
+
+#footer .content-list .footer-content-item {
+  margin-bottom: 0.7rem;
 }
 
 @media screen and (max-width: 800px) {
