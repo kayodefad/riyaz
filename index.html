@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <script src="https://kit.fontawesome.com/6450fc700a.js" crossorigin="anonymous"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Riyaz Barbers</title>
 </head>
 
@@ -63,10 +64,10 @@
                 style="position: absolute; z-index: 10; width: 100%; height: 100%; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0,0,0,0.5);">
             </div>
             <div class="caption">
-                <p class="riyaz-head">RIYAZ BARBERS</p>
-                <p class="riyaz-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt totam doloremque
+                <p data-aos="fade-up" class="riyaz-head">RIYAZ BARBERS</p>
+                <p data-aos="fade-down" class="riyaz-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt totam doloremque
                     perspiciatis, possimus recusandae sint vitae dicta iure aut quisquam!</p>
-                <a href="#book-app" id="book-app-header" class="btn custom-button">Book An Appointment</a>
+                <a data-aos="fade-down" href="#book-app" class="btn custom-button">Book An Appointment</a>
             </div>
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -75,7 +76,7 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="images/779A2926.JPG" class="d-block w-100" alt="...">
+                    <img src="images/779A2831.JPG" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
                     <img src="images/779A2823.JPG" class="d-block w-100" alt="...">
@@ -95,9 +96,9 @@
             <div id="all-services">
                 <div>
                     <div id="services-header">All Services</div>
-                    <p id="services-inner-header">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    <!-- <p id="services-inner-header">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                         Reprehenderit,
-                        odit?</p>
+                        odit?</p> -->
                     <table>
                         <tr>
                             <td>Mon-Fri:</td>
@@ -131,12 +132,7 @@
                         <input type="date" name="date" id="date" required>
                     </div>
                     <div class="time">
-                        <select id="time" name="time" required>
-                            <option value="9:00am">9:00am</option>
-                            <option value="10:00am">10:00am</option>
-                            <option value="11:00am">11:00am</option>
-                            <option value="12:00pm">12:00pm</option>
-                        </select>
+                        <input type="time" id="time" name="time" required>
                     </div>
                 </div>
                 <textarea name="service-needed" id="service-needed" cols="10" rows="5" placeholder="Describe the service you need" required></textarea>
@@ -202,32 +198,32 @@
         <h3>Our Services</h3>
         <div class="underscore"></div>
         <div class="row">
-            <div class="col-md-6 col-lg-3 mb-5">
+            <div data-aos="zoom-in" class="col-md-6 col-lg-3 mb-5">
                 <div class="service mx-auto">
                     <img src="images/779A2823.JPG"
                         alt="">
                     <div class="service-overlay">Barbing</div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-3 mb-5">
+            <div data-aos="zoom-in" data-aos-delay="100" class="col-md-6 col-lg-3 mb-5">
                 <div class="service mx-auto">
-                    <img src="https://cdn.pixabay.com/photo/2020/08/30/14/56/beautician-5529803_1280.jpg" alt="">
+                    <img src="images/manicure.jpeg" alt="manicure">
                     <div class="service-overlay">Manicure & Pedicure</div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-3 mb-5">
+            <div data-aos="zoom-in" data-aos-delay="200" class="col-md-6 col-lg-3 mb-5">
                 <div class="service mx-auto">
-                    <img src="https://cdn.pixabay.com/photo/2014/03/11/22/57/wellness-285590_1280.jpg" alt="">
+                    <img src="images/massage.jpeg" alt="massage">
                     <div class="service-overlay">Massaging</div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-3 mb-5">
+            <div data-aos="zoom-in" data-aos-delay="300" class="col-md-6 col-lg-3 mb-5">
                 <div class="service mx-auto">
                     <img src="images/779A2873.JPG" alt="">
                     <div class="service-overlay">DJ services</div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-3 mb-5">
+            <div data-aos="zoom-in" data-aos-delay="400" class="col-md-6 col-lg-3 mb-5">
                 <div class="service mx-auto">
                     <img src="images/779A2920.JPG" alt="">
                     <div class="service-overlay">Children Salon</div>
@@ -248,7 +244,7 @@
                             <img src="images/779A2956_1.JPG" alt="black man">
                         </div>
                         <div class="barber-name d-flex align-items-center justify-content-center">
-                            Foden
+                            Emmanuel
                         </div>
                     </div>
                 </div>
@@ -259,7 +255,7 @@
                                 alt="black man">
                         </div>
                         <div class="barber-name d-flex align-items-center justify-content-center">
-                            Johnson
+                            Joseph
                         </div>
                     </div>
                 </div>
@@ -270,7 +266,7 @@
                                 alt="black man">
                         </div>
                         <div class="barber-name d-flex align-items-center justify-content-center">
-                            Ronaldo
+                            Akass
                         </div>
                     </div>
                 </div>
@@ -283,7 +279,7 @@
         <h3 class="gallery-header">Gallery</h3>
         <div class="underscore mx-auto"></div>
         <div class="gallery">
-            <div class="column">
+            <div data-aos="fade-up" class="column">
                 <img
                     src="images/779A2825.JPG">
                 <img
@@ -293,7 +289,7 @@
                 <img
                     src="images/779A2841.JPG">
             </div>
-            <div class="column">
+            <div data-aos="fade-down" class="column">
                 <img
                     src="images/779A2842.JPG">
                 <img
@@ -303,7 +299,7 @@
                 <img
                     src="images/779A2892.JPG">
             </div>
-            <div class="column">
+            <div data-aos="fade-right" class="column">
                 <img
                     src="images/779A2852.JPG">
                 <img
@@ -317,7 +313,7 @@
                 <img
                     src="images/779A2943.JPG">
             </div>
-            <div class="column">
+            <div data-aos="fade-left" class="column">
                 <img
                     src="images/779A2865.JPG">
                 <img
@@ -365,11 +361,10 @@
                                         <div class="fa fa-star"></div>
                                         <div class="fa fa-star"></div>
                                     </div>
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem qui consequuntur
-                                        laboriosam sunt corrupti expedita voluptatum voluptate sint nisi porro.</p>
+                                    <p>Workers were exceedingly polite and professional. They seemed to genuinely care about their customer.</p>
                                     <a href="#" class="text-link"></a>
                                     <div class="testimonials-avatar">
-                                        <h3>John Doe</h3>
+                                        <h3>Seun</h3>
                                         <!-- <h4>Owner</h4> -->
                                     </div>
                                 </div>
@@ -393,11 +388,10 @@
                                         <div class="fa fa-star"></div>
                                         <div class="fa fa-star"></div>
                                     </div>
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem qui consequuntur
-                                        laboriosam sunt corrupti expedita voluptatum voluptate sint nisi porro.</p>
+                                    <p>The haircut was exactly as I wanted, the barber was gentle with my scalp.</p>
                                     <a href="#" class="text-link"></a>
                                     <div class="testimonials-avatar">
-                                        <h3>Fatima Olande</h3>
+                                        <h3>Chinedu</h3>
                                         <!-- <h4>Owner</h4> -->
                                     </div>
                                 </div>
@@ -421,11 +415,10 @@
                                         <div class="fa fa-star"></div>
                                         <div class="fa fa-star"></div>
                                     </div>
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem qui consequuntur
-                                        laboriosam sunt corrupti expedita voluptatum voluptate sint nisi porro.</p>
+                                    <p>Very inexpensive for a quality manicure and pedicure. Very friendly and relaxed workers..</p>
                                     <a href="#" class="text-link"></a>
                                     <div class="testimonials-avatar">
-                                        <h3>Michael Brandt</h3>
+                                        <h3>Temitope</h3>
                                         <!-- <h4>Owner</h4> -->
                                     </div>
                                 </div>
@@ -449,11 +442,37 @@
                                         <div class="fa fa-star"></div>
                                         <div class="fa fa-star"></div>
                                     </div>
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem qui consequuntur
-                                        laboriosam sunt corrupti expedita voluptatum voluptate sint nisi porro.</p>
+                                    <p>I'm very happy with the massage, the massage very soothing and it helped with my back pain.</p>
                                     <a href="#" class="text-link"></a>
                                     <div class="testimonials-avatar">
-                                        <h3>James Brown</h3>
+                                        <h3>Alex</h3>
+                                        <!-- <h4>Owner</h4> -->
+                                    </div>
+                                </div>
+                                <div class="testimonials-text-before"><i class="fa fa-quote-left"></i></div>
+                            </div>
+                        </div>
+                        <!-- Fifth -->
+                        <div class="swiper-slide">
+                            <div class="testi-item">
+                                <!-- <div class="testi-avatar">
+                                    <img src="https://thumbs.dreamstime.com/b/happy-smiling-man-looking-away-confident-young-big-smile-handsome-guy-window-thinking-future-closeup-face-152000693.jpg"
+                                        alt="">
+                                </div> -->
+                                <div class="testimonials-text-before"><i class="fa fa-quote-right"></i>
+                                </div>
+                                <div class="testimonials-text">
+                                    <div class="listing-rating">
+                                        <div class="fa fa-star"></div>
+                                        <div class="fa fa-star"></div>
+                                        <div class="fa fa-star"></div>
+                                        <div class="fa fa-star"></div>
+                                        <div class="fa fa-star"></div>
+                                    </div>
+                                    <p>Great haircut at a fair price, best practice is to make an appointment if possible. Home service was also splendid.</p>
+                                    <a href="#" class="text-link"></a>
+                                    <div class="testimonials-avatar">
+                                        <h3>Joseph</h3>
                                         <!-- <h4>Owner</h4> -->
                                     </div>
                                 </div>
@@ -526,8 +545,9 @@
                     <div>
                         <p class="footer-content-header font-weight-bold">Social Media</p>
                     <ul class="footer content-list">
-                        <li class="footer-content-item"><a href="https://facebook.com/riyazbarbers" class="footer-link" target="_blank">Facebook</a></li>
-                        <li class="footer-content-item"><a href="https://www.instagram.com/Riyazbarbers_abuja/" class="footer-link" target="_blank">Instagram</a></li>
+                        <li class="footer-content-item"><a href="https://facebook.com/riyazbarbers" class="footer-link d-flex align-items-center" target="_blank"><img src="images/facebook-icon.png" class="social-icons" alt="facebook-icon">Facebook</a></li>
+                        <li class="footer-content-item"><a href="https://www.instagram.com/Riyazbarbers_abuja/" class="footer-link d-flex align-items-center" target="_blank"><img src="images/instagram-icon.png" class="social-icons" alt="instagram-icon">Instagram</a></li>
+                        <li class="footer-content-item"><a href="https://wa.link/lqg554" class="footer-link d-flex align-items-center" target="_blank"><img src="images/whatsapp-icon.png" class="social-icons" alt="whatsapp-icon">Whatsapp</a></li>
                     </ul>
                     </div>
                 </div>
@@ -554,7 +574,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.0/swiper-bundle.min.js"
         integrity="sha512-qqdD5ZLIGB5PCqCk1OD8nFBr/ngB5w+Uw35RE/Ivt5DK35xl1PFVkuOgAbqFpvtoxX6MpRGLmIqixzdhFOJhnA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="js/script.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="js/script.js"></script>
 </body>
 
 </html>

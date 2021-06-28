@@ -1,3 +1,10 @@
+// AOS
+AOS.init({
+  once: true,
+  startEvent: 'DOMContentLoaded',
+  duration: 1000,
+});
+
 // Get the modal
 var modal = document.getElementById("myModal");
 
