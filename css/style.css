@@ -5,7 +5,7 @@ html {
 }
 
 :root {
-  --gold-color: rgb(206, 159, 43);
+  --gold-color: #ce9f2b;
 }
 
 * {
@@ -63,6 +63,11 @@ ul {
 .custom-button:hover {
   opacity: 1;
   color: #fff;
+}
+
+.custom-button:disabled {
+  cursor: not-allowed;
+  pointer-events: all !important;
 }
 
 .underscore {
@@ -210,7 +215,7 @@ nav {
 }
 
 #book-app form {
-  padding: 3.5em 3rem 4rem 3rem;
+  padding: 2em 3rem 2rem 3rem;
   border: 1px solid var(--gold-color);
   /* border-radius: 5px; */
   background: #F6F6F6;
@@ -222,12 +227,13 @@ nav {
 }
 
 #book-app input,
-#book-app select  {
+#book-app select,
+#book-app textarea  {
   border:none;
   padding: 0.5rem;
   background: #fff;
   outline: none;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   width: 100%;
   background: rgb(255,255,255,0.8);
 }
