@@ -236,3 +236,7 @@ body{
 	height: 10px;
 	transition: all 300ms ease-in-out;
 }
+
+.fa.fa-star {
+	color: #ce9f2b;
+}
